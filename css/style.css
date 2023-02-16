@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+
+:root {
+  --primary-one-color: hsl(225, 100%, 94%);
+  --primary-two-color: hsl(245, 75%, 52%);
+  --neutral-one-color: hsl(225, 100%, 98%);
+  --neutral-two-color: hsl(224, 23%, 55%);
+  --neutral-three-color: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: var(--primary-one-color);
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.order-summary {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 28%;
+  border-radius: 1em;
+  box-shadow: 0px 5px 20px rgba(114, 128, 167, 0.384);
+
+}
+
+.order-summary img {
+  border-radius: 1em 1em 0 0;
+}
+
+.order-summary .container {
+  padding: 2em 2em;
+  text-align: center;
+}
+
+.order-summary .container .summary-product {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.order-summary .container .summary-product .title-order-summary {
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding-bottom: .8em;
+  color: var(--neutral-three-color);
+}
+
+.order-summary .container .summary-product .advantage-desc {
+  color: var(--neutral-two-color);
+  padding-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.order-summary .container .payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4em 1.2em;
+  background-color: var(--neutral-one-color);
+  border-radius: 1em;
+}
+
+.order-summary .container .payment .product-payment {
+  display: flex;
+}
+
+.order-summary .container .payment .product-payment .product-order {
+  margin-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.order-summary .container .payment .product-payment .product-order .name-order {
+  font-weight: 900;
+  color: var(--neutral-three-color);
+
+}
+
+.order-summary .container .payment .product-payment .product-order .price-subscribe {
+  color: var(--neutral-two-color);
+}
+
+.order-summary .container .payment a {
+  text-decoration: underline;
+  color: var(--primary-two-color);
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+
+.order-summary .container .payment a:hover {
+  text-decoration: none;
+  color: rgb(181, 121, 204);
+}
+
+.order-summary .container .cta a {
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.order-summary .container .cta .cta-payment {
+  background-color: var(--primary-two-color);
+  color: var(--primary-one-color);
+  border-radius: 1em;
+  box-shadow: 0px 10px 20px rgba(114, 128, 167, 0.493);
+  margin: 2em 0 1.2em;
+}
+
+.order-summary .container .cta .cta-payment:hover {
+  background-color: hsl(278, 80%, 49%);
+}
+
+.order-summary .container .cta .cta-cancel {
+  color: var(--neutral-two-color);
+}
+
+.order-summary .container .cta .cta-cancel:hover {
+  color: var(--neutral-three-color);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+  .order-summary {
+    max-width: 90%;
+    font-size: 90%;
+  }
+
+  .order-summary .container .summary-product .title-order-summary {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
